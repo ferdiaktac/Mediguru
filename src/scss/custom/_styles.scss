@@ -244,7 +244,7 @@ section.header {
           display: flex;
           &::before {
             display: inline-block;
-            content: url(img/icons/checkmark.svg);
+            content: url(/img/icons/checkmark.svg);
             width: 24px;
             height: 24px;
             margin-right: 3px;
@@ -260,7 +260,7 @@ section.header {
       position: relative;
       .shape-square {
         display: block;
-        background: url(img/home-hero-shape.svg);
+        background: url(/img/home-hero-shape.svg);
         background-repeat: no-repeat;
         position: absolute;
         z-index: 0;
@@ -271,7 +271,7 @@ section.header {
       }
       .shape {
         display: block;
-        background: url(img/home-hero-shape-2.svg);
+        background: url(/img/home-hero-shape-2.svg);
         background-repeat: no-repeat;
         position: absolute;
         z-index: 1;
@@ -471,7 +471,7 @@ section.header {
     border-radius: 8px;
     &::before {
       content: "";
-      background: url(img/icons/search-white.svg);
+      background: url(/img/icons/search-white.svg);
       display: block;
       width: 30px;
       height: 30px;
@@ -652,7 +652,7 @@ form {
 .dropdown-toggle {
   &::after {
     display: inline-block;
-    content: url(img/icons/CaretDown.svg);
+    content: url(/img/icons/CaretDown.svg);
     width: 24px;
     height: 24px;
     margin-right: 3px;
@@ -1088,7 +1088,7 @@ footer {
     }
     &:before {
       content: "";
-      background: url(img/icons/footer-shape.svg);
+      background: url(/img/icons/footer-shape.svg);
       display: block;
       position: absolute;
       width: 637px;
@@ -1469,7 +1469,7 @@ section.sub-page-how-it-works {
       list-style: none;
       &::after {
         display: inline-block;
-        content: url(img/icons/CaretRight.svg);
+        content: url(/img/icons/CaretRight.svg);
         width: 12px;
         height: 12px;
         margin: 0 8px;
@@ -1606,7 +1606,7 @@ section.sub-page-how-it-works {
           }
           &::after {
             display: inline-block;
-            content: url(img/icons/CaretDown.svg);
+            content: url(/img/icons/CaretDown.svg);
             width: 24px;
             height: 24px;
             margin-right: 3px;
@@ -1727,7 +1727,7 @@ section.sub-page-how-it-works {
     right: 8px;
     &::before {
       display: inline-block;
-      content: url(img/icons/CaretDown.svg);
+      content: url(/img/icons/CaretDown.svg);
       width: 24px;
       height: 24px;
       margin-right: 3px;
@@ -1921,7 +1921,7 @@ option:not(:first-of-type) {
               border: 1px solid var(--bs-line);
               &::after {
                 display: inline-block;
-                content: url(img/icons/CaretDownBlue.svg);
+                content: url(/img/icons/CaretDownBlue.svg);
                 width: 24px;
                 height: 24px;
                 border: none;
@@ -1960,7 +1960,7 @@ option:not(:first-of-type) {
         background-color: var(--bs-white);
       }
       .expand-button:after {
-        content: url(img/icons/XBlue.svg) !important;
+        content: url(/img/icons/XBlue.svg) !important;
       }
     }
     .reservation-item-content {
@@ -2964,7 +2964,7 @@ span.no-underline {
         }
         &::after {
           display: inline-block;
-          content: url(img/icons/Play.svg);
+          content: url(/img/icons/Play.svg);
           width: 48px;
           height: 48px;
           left: calc(50% - 48px / 2 - 0.17px);

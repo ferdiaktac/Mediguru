@@ -10927,7 +10927,7 @@ i.flag:not(.icon):before {
 }
 i.flag:not(.icon):before {
   content: "";
-  background: url(https://mdbootstrap.comimg/svg/flags.png) no-repeat -108px -1976px;
+  background: url(https://mdbootstrap.com/img/svg/flags.png) no-repeat -108px -1976px;
 }
 i.flag.ad:before,
 i.flag.andorra:before {
