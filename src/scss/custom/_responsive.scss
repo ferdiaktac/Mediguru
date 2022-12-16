@@ -616,6 +616,8 @@ $grid-breakpoints: (
             }
             .experience {
               margin-left: 0;
+              height: 29px !important;
+              max-height: 29px !important;
             }
           }
           .doctor-rating {
