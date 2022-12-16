@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Mediguru</title>
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/mdb.pro.css" />
+    <link rel="stylesheet" href="js/telinput/css/intlTelInput.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <section class="header">
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg d-none d-sm-none d-lg-flex"
+        aos-init
+        aos-animate
+        data-aos="fade-down"
+        data-aos-duration="800"
+      >
+        <div class="container">
+          <div class="left">
+            <div class="logo">
+              <a href=""><img src="/img/logo.svg" alt="Mediguru" /></a>
+            </div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Find a Doctor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Procedures</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="right">
+            <!-- Nav-Search -->
+            <div class="hero-search form-group">
+              <form autocomplete="off" action="">
+                <input
+                  type="text"
+                  id="search"
+                  class="form-control form-control-lg"
+                  required
+                  placeholder="Procedure, doctor, practice, treatment"
+                  name="search"
+                  autocomplete="off"
+                />
+                <a href="#" data-toggle="tooltip" data-mdb-placement="bottom" title="Close" class="search-close-button"
+                  ><img src="/img/icons/cross.svg"
+                /></a>
+              </form>
+            </div>
+            <!-- Nav-Search -->
+            <a
+              class="btn btn-floating search-button"
+              href="#"
+              role="button"
+              data-toggle="tooltip"
+              data-mdb-placement="bottom"
+              title="Search"
+              ><img src="/img/icons/Search.svg"
+            /></a>
+            <!-- User Menu -->
+            <div class="user">
+              <div class="dropdown">
+                <a
+                  class="dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="/img/icons/UserCircle.svg" />
+                  Jane Smith
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item" href="#"> <img src="/img/icons/User.svg" />Account Details</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> <img src="/img/icons/HeartStraight.svg" />Favourite Doctor</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> <img src="/img/icons/CalendarBlank.svg" />Reservations</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> <img src="/img/icons/LockOpen.svg" />Change Password</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> <img src="/img/icons/SignOut.svg" />Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- User Menu End -->
+
+            <!-- <div class="signin-up">
+              <a
+                class="btn btn-outline-primary mr-4"
+                href="#"
+                role="button"
+                data-toggle="modal"
+                data-target="#loginModal"
+                >Login</a
+              >
+              <a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#RegisterModal"
+                >Sign Up</a
+              >
+            </div> -->
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Navbar Mobile -->
+      <nav class="navbar navbar-expand-sm d-sm-flex d-lg-none">
+        <div class="container">
+          <div class="left col-3 justify-content-start">
+            <div class="menu">
+              <a href="#" role="button" data-toggle="modal" data-target="#MobileMenu">
+                <img src="img/icons/menu.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="logo col-6 d-flex justify-content-center">
+            <a href=""><img src="/img/logo.svg" alt="Mediguru" /></a>
+          </div>
+          <div class="right col-3 justify-content-end">
+            <a
+              class="btn btn-floating search-button"
+              href="#"
+              role="button"
+              data-toggle="tooltip"
+              data-mdb-placement="bottom"
+              title="Search"
+              ><img src="/img/icons/Search.svg" width="24"
+            /></a>
+            <!-- Nav-Search -->
+            <div class="row">
+              <div class="col">
+                <div class="hero-search form-group">
+                  <form autocomplete="off" action="">
+                    <input
+                      type="text"
+                      id="searchMobile"
+                      class="form-control form-control-lg"
+                      required
+                      placeholder="Procedure, doctor, practice, treatment"
+                      name="search"
+                      autocomplete="off"
+                    />
+                    <a
+                      href="#"
+                      data-toggle="tooltip"
+                      data-mdb-placement="bottom"
+                      title="Close"
+                      class="search-close-button"
+                      ><img src="/img/icons/cross.svg"
+                    /></a>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- Nav-Search -->
+            <div class="account">
+              <a href="#" role="button" data-toggle="modal" data-target="#SignInUp">
+                <img src="img/icons/UserCircle.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Hero -->
+      <div class="container-fluid g-0 hero procedure mb-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 left" aos-init aos-animate data-aos="fade-right" data-aos-duration="800">
+              <div class="big-title d1">Procedures</div>
+              <div class="info">
+                <h4>Find and check over the right procedure for you!</h4>
+              </div>
+              <div class="hero-search form-group">
+                <form autocomplete="off" action="">
+                  <input
+                    type="text"
+                    id="search_hero"
+                    class="form-control form-control-lg"
+                    required
+                    placeholder="Procedure, doctor, practice, treatment"
+                    name="search"
+                    autocomplete="off"
+                  />
+                  <button type="submit" class="btn btn-primary btn-floating">
+                    <i class="search"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 right d-none d-lg-block d-xl-block"
+              aos-init
+              aos-animate
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              <div class="hero-slider">
+                <!-- Slide-->
+                <div class="slide-mask">
+                  <div id="homecarousel" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/slide/procedure-1.png" class="d-block w-100" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/slide/procedure-2.png" class="d-block w-100" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/slide/procedure-3.png" class="d-block w-100" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/slide/procedure-4.png" class="d-block w-100" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/slide/procedure-5.png" class="d-block w-100" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/slide/procedure-6.png" class="d-block w-100" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/slide/procedure-7.png" class="d-block w-100" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/slide/procedure-8.png" class="d-block w-100" />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/slide/procedure-9.png" class="d-block w-100" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hero End -->
+    </section>
+    <!-- Header End -->
+
+    <!-- How it works -->
+    <section class="sub-page-how-it-works" aos-init aos-animate data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4" aos-init aos-animate data-aos="fade-right" data-aos-duration="800">
+            <div class="feature">
+              <img src="/img/icons/how-it-works-5.svg" alt="" />
+              <h5>Board-Certified Doctors</h5>
+              <p class="p16">
+                If you would like to talk to a board-certified doctor in Turkey about average cost and procedure
+                information, we’re here to support you.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4" aos-init aos-animate data-aos="zoom-in" data-aos-duration="800">
+            <div class="feature">
+              <img src="/img/icons/how-it-works-4.svg" alt="" />
+              <h5>High Patient Satisfaction</h5>
+              <p class="p16">
+                All hospitals and clinics where Mediguru Doctors provide medical services meet global standards, and
+                also stand out with the centers of excellence.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4" aos-init aos-animate data-aos="fade-left" data-aos-duration="800">
+            <div class="feature">
+              <img src="/img/icons/how-it-works-2.svg" alt="" />
+              <h5>Private Transfer & Assistance</h5>
+              <p class="p16">
+                Our meet & greet team will take care of all your transfer needs from airport to hotel, hotel to
+                clinic/hospital, and hotel to airport until your departure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- How it works End-->
+
+    <!-- Procedures -->
+    <section class="doctors-list" aos-init aos-animate data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+        <div class="title">
+          <h1 class="mb-32 text-center">Procedures</h1>
+          <div class="count-items">
+            <span class="count"></span>
+            <span> Procedures</span>
+          </div>
+          <div class="filterbuttonmodal">
+            <a type="button" class="btn btn-link" data-toggle="modal" data-target="#FilterWrapper" data-dismiss="modal"
+              ><img src="img/icons/filter.svg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Filter -->
+          <div class="col-lg-12 mb-32">
+            <div
+              class="filter-wrapper modal fade bottom"
+              id="FilterWrapper"
+              tabindex="-1"
+              aria-labelledby="#FilterWrapper"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header d-flex justify-content-center">
+                    <h3 class="modal-title" id="#FilterWrapper">Filter</h3>
+                    <div class="close-filter">
+                      <a href="#" data-dismiss="modal"><img src="/img/icons/cross.svg" alt="" /></a>
+                    </div>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container p-0">
+                      <div id="filter-sort" data-mdb-auto-filter="true">
+                        <!-- Body Areas -->
+                        <div class="filter-dropdown bodyareas" data-mdb-filter="bodyareas">
+                          <div class="dropdown">
+                            <a
+                              class="dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Body Areas
+                              <span class="count-checked d-none"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li class="dropdown-item">
+                                <input type="checkbox" class="form-check-input" name="body" id="body1" value="Chin" />
+                                <label for="body1">Chin</label>
+                              </li>
+                              <li class="dropdown-item">
+                                <input type="checkbox" class="form-check-input" name="body" id="body2" value="Arm" />
+                                <label for="body2">Arm</label>
+                              </li>
+                              <li class="dropdown-item">
+                                <input type="checkbox" class="form-check-input" name="body" id="body3" value="Butt" />
+                                <label for="body3">Butt</label>
+                              </li>
+                              <li class="dropdown-item">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  name="body"
+                                  id="body4"
+                                  value="Stomach"
+                                />
+                                <label for="body4">Stomach</label>
+                              </li>
+                              <li class="dropdown-item">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  name="body"
+                                  id="body5"
+                                  value="Female Genital"
+                                />
+                                <label for="body5">Female Genital</label>
+                              </li>
+                              <li class="dropdown-item">
+                                <input type="checkbox" class="form-check-input" name="body" id="body6" value="Breast" />
+                                <label for="body6">Breast</label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- Body Areas End -->
+
+                        <!-- Concerns -->
+                        <div class="filter-dropdown concerns" data-mdb-filter="concerns">
+                          <div class="dropdown">
+                            <a
+                              class="dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Concerns
+                              <span class="count-checked d-none"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li class="dropdown-item">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  name="concern"
+                                  id="concern1"
+                                  value="Acne"
+                                />
+                                <label for="concern1">Acne</label>
+                              </li>
+                              <li class="dropdown-item">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  name="concern"
+                                  id="concern2"
+                                  value="Breast Cancer"
+                                />
+                                <label for="concern2">Breast Cancer</label>
+                              </li>
+                              <li class="dropdown-item">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  name="concern3"
+                                  id="concern3"
+                                  value="Capsular Contracture"
+                                />
+                                <label for="concern3">Capsular Contracture</label>
+                              </li>
+                              <li class="dropdown-item">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  name="concern"
+                                  id="concern4"
+                                  value="Cellulite"
+                                />
+                                <label for="concern4">Cellulite</label>
+                              </li>
+                              <li class="dropdown-item">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  name="concern"
+                                  id="concern5"
+                                  value="Eczema"
+                                />
+                                <label for="concern5">Eczema</label>
+                              </li>
+                              <li class="dropdown-item">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  name="concern"
+                                  id="concern6"
+                                  value="Flat Butt"
+                                />
+                                <label for="concern6">Flat Butt</label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- Concerns End -->
+
+                        <button type="button" class="btn btn-outline-primary" id="filterSortReset" data-dismiss="modal">
+                          Clear
+                        </button>
+                        <button type="button" class="btn btn-primary" id="filterdone" data-dismiss="modal">Done</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Filter End -->
+        </div>
+        <div class="row" id="procedures-data"></div>
+      </div>
+    </section>
+    <!-- Procedures End -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container ask-a-question" aos-init aos-animate data-aos="fade-up" data-aos-duration="1000">
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <div class="d1 mb-4">Get started with us</div>
+            <p class="p20">
+              Need more time to discuss? Don’t worry, we are ready to help you 24/7. Please fill in the column on the
+              right to get started.
+            </p>
+          </div>
+          <div class="col-lg-5 offset-lg-1">
+            <form action="">
+              <h3 class="mb-32">Ask a question</h3>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="Ask_FullName"
+                  placeholder="Full Name"
+                  required="required"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  id="Ask_Email"
+                  placeholder="Email"
+                  required="required"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  type="textarea"
+                  class="form-control form-control-lg"
+                  id="Ask_Messsage"
+                  placeholder="Message"
+                  required="required"
+                  style="height: 100px; resize: none"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container footer" aos-init aos-animate data-aos="fade-up" data-aos-duration="1000">
+        <div class="row">
+          <div class="col-lg-4 mediguru mb-md-4">
+            <img src="/img/logo.svg" alt="" />
+            <span>Find the Best Doctors in Turkey</span>
+            <ul class="social">
+              <li>
+                <a href=""><img src="/img/icons/facebook.svg" alt="" /> </a>
+              </li>
+              <li>
+                <a href=""><img src="/img/icons/twitter.svg" alt="" /> </a>
+              </li>
+              <li>
+                <a href=""><img src="/img/icons/instagram.svg" alt="" /> </a>
+              </li>
+              <li>
+                <a href=""><img src="/img/icons/linkedin.svg" alt="" /> </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 mb-md-4">
+            <h4 class="title">About</h4>
+            <ul class="footer-menu">
+              <li><a href="">Menu Item</a></li>
+              <li><a href="">Menu Item</a></li>
+              <li><a href="">Menu Item</a></li>
+              <li><a href="">Terms & Conditions</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 mb-md-4">
+            <h4 class="title">Link</h4>
+            <ul class="footer-menu">
+              <li><a href="">Find a Doctor</a></li>
+              <li><a href="">Procedures</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Menu Item</a></li>
+              <li><a href="">Menu Item</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h4 class="title">Contact</h4>
+            <ul class="footer-menu">
+              <li>
+                <img src="/img/icons/Phone.svg" />
+                <a href="tel:+90 850 888 88 88">+90 850 888 88 88</a>
+              </li>
+              <li>
+                <img src="/img/icons/Envelope.svg" />
+                <a href="mailto:contact@mediguru.com">contact@mediguru.com</a>
+              </li>
+              <li>
+                <img src="/img/icons/MapPin.svg" />
+                Mecidiyekoy Neighborhood, Selahattin Pinar Road, Apartment Number:25/2<br />Sisli/Istanbul TURKEY
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-12 copyright">© 2023 All Rights Reserved - <a href="">Mediguru</a></div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End-->
+
+    <!-- Modals -->
+
+    <!--Login Modal-->
+    <div class="modal fade bottom" id="loginModal" tabindex="-1" aria-labelledby="#loginModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-center">
+            <h3 class="modal-title" id="#loginModal">Login</h3>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="Email">Email</label>
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  id="Email"
+                  placeholder="Email"
+                  required="required"
+                />
+              </div>
+              <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input
+                  type="password"
+                  class="form-control form-control-lg"
+                  id="password"
+                  placeholder="Password"
+                  required="required"
+                />
+              </div>
+              <div class="row justify-content-between">
+                <div class="col">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="Remember" />
+                    <label class="form-check-label" for="Remember">Remember me</label>
+                  </div>
+                </div>
+                <div class="col text-right">
+                  <a
+                    type="button"
+                    class="btn btn-link"
+                    data-toggle="modal"
+                    data-target="#ForgotPassword"
+                    data-dismiss="modal"
+                    >Forgot Password</a
+                  >
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Login</button>
+              <div class="row">
+                <div class="col text-center mt-4">
+                  Don’t have an account?
+                  <a
+                    type="button"
+                    class="btn btn-link"
+                    data-toggle="modal"
+                    data-dismiss="modal"
+                    data-target="#RegisterModal"
+                    >Register</a
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Login Modal end-->
+
+    <!--Register Modal-->
+    <div class="modal fade bottom" id="RegisterModal" tabindex="-1" aria-labelledby="#RegisterModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-center">
+            <h3 class="modal-title" id="#RegisterModal">Sign Up</h3>
+          </div>
+          <div class="modal-body">
+            <form action="" oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
+              <div class="form-group">
+                <label for="FullName">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="FullName"
+                  placeholder="Full Name"
+                  required="required"
+                />
+              </div>
+              <div class="form-group">
+                <label for="Email">Email</label>
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  id="EmailRegister"
+                  placeholder="Email"
+                  required="required"
+                />
+              </div>
+              <div class="form-group">
+                <label for="tel_number">Phone</label>
+                <input
+                  type="tel"
+                  class="form-control form-control-lg"
+                  id="tel_number"
+                  name="tel_number"
+                  placeholder="Phone"
+                  required="required"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password1">Password</label>
+                <input
+                  type="password"
+                  class="form-control form-control-lg"
+                  id="password1"
+                  placeholder="Password"
+                  required="required"
+                  name="up"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password2">Password Confirmation</label>
+                <input
+                  type="password"
+                  class="form-control form-control-lg"
+                  id="password2"
+                  placeholder="Password Confirmation"
+                  required="required"
+                  name="up2"
+                />
+              </div>
+              <div class="row justify-content-center">
+                <div class="col">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="Terms" />
+                    <label class="form-check-label" for="Terms"
+                      >I agree to the
+                      <a type="button" class="btn btn-link" data-toggle="modal" data-target="#TermsAndConditions"
+                        >Terms & Conditions</a
+                      ></label
+                    >
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+              <div class="row">
+                <div class="col text-center mt-4">
+                  Already have an account?
+                  <a
+                    type="button"
+                    class="btn btn-link"
+                    data-toggle="modal"
+                    data-target="#loginModal"
+                    data-dismiss="modal"
+                    >Login</a
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Register Modal end-->
+
+    <!--TermsAndConditions Modal-->
+    <div
+      class="modal fade bottom"
+      id="TermsAndConditions"
+      tabindex="-1"
+      aria-labelledby="#TermsAndConditions"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-center pb-4">
+            <h3 class="modal-title" id="#TermsAndConditions">Terms & Conditions</h3>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vestibulum egestas odio, eget vehicula
+              libero feugiat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus turpis neque,
+              sed sagittis lectus faucibus interdum. Vestibulum efficitur viverra faucibus. Duis sagittis vel velit ut
+              faucibus. Aenean aliquet magna dolor, egestas commodo ligula varius a. Duis dignissim metus lacus, nec
+              hendrerit arcu tempus et. Donec ligula metus, mollis et purus vitae, mattis hendrerit ante. Ut lacus enim,
+              luctus ac semper vitae, efficitur vel purus. Vivamus venenatis venenatis eros, et varius ipsum. Nunc in
+              odio nec ipsum malesuada fringilla. Nulla in orci lobortis, pretium nibh vel, sagittis ante. Suspendisse
+              vitae nulla aliquam, auctor purus at, eleifend ex. Sed ullamcorper congue nulla ut semper. Curabitur
+              pharetra aliquam est, a pharetra neque.
+            </p>
+            <p>
+              Nam ac vulputate enim. Vivamus eu elit vitae nisl porttitor vestibulum id cursus urna. Proin et velit
+              justo. Maecenas tempus viverra purus et consectetur. Proin consequat blandit augue vel sagittis. Sed quis
+              lorem orci. In et tellus vitae turpis mollis laoreet vel gravida neque. Fusce ex nibh, bibendum non ornare
+              eget, posuere ut eros. Mauris rutrum vel orci tincidunt convallis. Curabitur sapien nulla, fermentum sed
+              nisi ut, euismod vehicula lectus. Donec et ipsum sed neque imperdiet ornare id vel sapien. Suspendisse
+              auctor lacinia orci ut rutrum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vestibulum egestas odio, eget vehicula
+              libero feugiat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus turpis neque,
+              sed sagittis lectus faucibus interdum. Vestibulum efficitur viverra faucibus. Duis sagittis vel velit ut
+              faucibus. Aenean aliquet magna dolor, egestas commodo ligula varius a. Duis dignissim metus lacus, nec
+              hendrerit arcu tempus et. Donec ligula metus, mollis et purus vitae, mattis hendrerit ante. Ut lacus enim,
+              luctus ac semper vitae, efficitur vel purus. Vivamus venenatis venenatis eros, et varius ipsum. Nunc in
+              odio nec ipsum malesuada fringilla. Nulla in orci lobortis, pretium nibh vel, sagittis ante. Suspendisse
+              vitae nulla aliquam, auctor purus at, eleifend ex. Sed ullamcorper congue nulla ut semper. Curabitur
+              pharetra aliquam est, a pharetra neque.
+            </p>
+            <p>
+              Nam ac vulputate enim. Vivamus eu elit vitae nisl porttitor vestibulum id cursus urna. Proin et velit
+              justo. Maecenas tempus viverra purus et consectetur. Proin consequat blandit augue vel sagittis. Sed quis
+              lorem orci. In et tellus vitae turpis mollis laoreet vel gravida neque. Fusce ex nibh, bibendum non ornare
+              eget, posuere ut eros. Mauris rutrum vel orci tincidunt convallis. Curabitur sapien nulla, fermentum sed
+              nisi ut, euismod vehicula lectus. Donec et ipsum sed neque imperdiet ornare id vel sapien. Suspendisse
+              auctor lacinia orci ut rutrum.
+            </p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button
+              type="button"
+              class="btn btn-outline-primary w-50"
+              data-toggle="modal"
+              data-target="#RegisterModal"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--TermsAndConditions Modal end-->
+
+    <!--Reset Password Modal-->
+    <div
+      class="modal fade bottom"
+      id="ForgotPassword"
+      tabindex="-1"
+      aria-labelledby="#ForgotPassword"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-center flex-column">
+            <h3 class="modal-title" id="#ForgotPassword">Reset Password</h3>
+            <p>Enter your email address and we will send you a link to login.</p>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="Email_Reset">Email</label>
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  id="Email_Reset"
+                  placeholder="Email"
+                  required="required"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Reset Password Modal end-->
+
+    <!--Account Mobile Modal-->
+    <div class="modal fade bottom" id="SignInUp" tabindex="-1" aria-labelledby="#SignInUp" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-center">
+            <h3 class="modal-title" id="#SignInUp">Account</h3>
+          </div>
+          <div class="modal-body">
+            <!-- <div class="signin-up">
+              <a
+                class="btn btn-outline-primary w-100 mb-4"
+                href="#"
+                role="button"
+                data-toggle="modal"
+                data-target="#loginModal"
+                data-dismiss="modal"
+                >Login</a
+              >
+              <a
+                class="btn btn-primary w-100"
+                href="#"
+                role="button"
+                data-toggle="modal"
+                data-target="#RegisterModal"
+                data-dismiss="modal"
+                >Sign Up</a
+              >
+            </div> -->
+            <!-- If Logged In -->
+            <div class="user">
+              <div class="dropdown">
+                <a>
+                  <img src="/img/icons/UserCircle.svg" />
+                  Jane Smith
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"> <img src="/img/icons/User.svg" />Account Details</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> <img src="/img/icons/HeartStraight.svg" />Favourite Doctor</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> <img src="/img/icons/CalendarBlank.svg" />Reservations</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> <img src="/img/icons/LockOpen.svg" />Change Password</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> <img src="/img/icons/SignOut.svg" />Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- If Logged In End -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Account Mobile Modal end-->
+
+    <!--Mobile Menu Modal-->
+    <div class="modal fade bottom" id="MobileMenu" tabindex="-1" aria-labelledby="#MobileMenu" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header d-flex justify-content-center">
+            <h3 class="modal-title" id="#MobileMenu">Menu</h3>
+          </div>
+          <div class="modal-body">
+            <div class="user">
+              <div class="dropdown">
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Find a Doctor</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Procedures</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Mobile Menu Modal End -->
+
+    <!-- Modals End -->
+  </body>
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/aos.js"></script>
+  <script type="text/javascript" src="/js/telinput/js/utils.js"></script>
+  <script type="text/javascript" src="/js/telinput/js/intlTelInput.min.js"></script>
+
+  <!-- Custom Scripts -->
+  <script type="text/javascript" src="src/js/pro/filters.min.js"></script>
+
+  <script>
+    const MultiFilters = document.getElementById("filter-sort");
+    const FilterDataProcedures = document.getElementById("procedures-data");
+    const multiReset = document.getElementById("filterSortReset");
+    const sortSelect = document.getElementById("sort-select");
+
+    const getItemsProcedures = () => {
+      return fetch("data/procedures.json").then((data) => data.json());
+    };
+
+    getItemsProcedures().then((items) => {
+      const multiInstance = new Filters(MultiFilters, {
+        items,
+      });
+      renderItems(items);
+
+      const numObjects = items.length;
+      const count = $("span.count");
+      $("span.count").html(numObjects);
+
+      multiReset.addEventListener("click", () => {
+        multiInstance.clear();
+        $(".filter-dropdown").removeClass("active");
+        $(".count-checked").addClass("d-none");
+      });
+    });
+
+    const renderItems = (items) => {
+      const elements = items.map((item) => {
+        const template = `
+        <!-- Procedure Item -->
+          <div class="col-lg-3 col-md-6 col-xs-12 mb-32">
+            <a class="procedure-item" id="${item.id}" href="#">
+              <img src="${item.img}" alt="" />
+              <div class="procedure-info">
+                <h6 class="procedure-name">${item.title}</h6>
+                <span class="p14 pt-1">${item.concern}</span>
+              </div>
+            </a>
+          </div>
+          <!-- Procedure Item End-->
+          `;
+        return template;
+      });
+
+      if (items.length === 0) {
+        return (FilterDataProcedures.innerHTML = `<div class="empty-state">
+            <img src="/img/icons/empty.svg" alt="" />
+            <p class="text-center mt-3 p16">We didn't find any procedures that match those filters.</p>
+            <span>Please clear the filter and try again.</span>
+          </div>`);
+      }
+
+      FilterDataProcedures.innerHTML = elements.join("\n");
+    };
+
+    MultiFilters.addEventListener("update.mdb.filters", (e) => {
+      renderItems(e.items);
+    });
+  </script>
+  <!-- Scripts End -->
+</html>
