@@ -23,16 +23,10 @@
   --bs-dark: #262626;
   --bs-white: #fff;
   --bs-black: #000;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.15),
-    rgba(255, 255, 255, 0)
-  );
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
 *,
@@ -1750,10 +1744,7 @@ progress {
 .table > :not(caption) > * > * {
   padding: 1rem 1.4rem;
   background-color: var(--bs-table-bg);
-  background-image: linear-gradient(
-    var(--bs-table-accent-bg),
-    var(--bs-table-accent-bg)
-  );
+  background-image: linear-gradient(var(--bs-table-accent-bg), var(--bs-table-accent-bg));
   border-bottom-width: 1px;
 }
 .table > tbody {
@@ -2142,8 +2133,7 @@ progress {
   appearance: none;
   -webkit-print-color-adjust: exact;
   color-adjust: exact;
-  transition: background-color 0.15s ease-in-out,
-    background-position 0.15s ease-in-out, border-color 0.15s ease-in-out,
+  transition: background-color 0.15s ease-in-out, background-position 0.15s ease-in-out, border-color 0.15s ease-in-out,
     box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -2335,10 +2325,8 @@ progress {
   background-color: #3889c6;
   border: 0;
   border-radius: 1rem;
-  -webkit-transition: background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
+  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   -webkit-appearance: none;
   appearance: none;
 }
@@ -2366,10 +2354,8 @@ progress {
   background-color: #3889c6;
   border: 0;
   border-radius: 1rem;
-  -moz-transition: background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   -moz-appearance: none;
   appearance: none;
 }
@@ -2400,10 +2386,8 @@ progress {
   background-color: #3889c6;
   border: 0;
   border-radius: 1rem;
-  -ms-transition: background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
+  -ms-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -2760,8 +2744,8 @@ textarea.form-control.is-invalid {
   padding: 0.375rem 0.75rem;
   font-size: 0.75rem;
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .btn {
@@ -3983,8 +3967,7 @@ fieldset:disabled .btn {
   display: block;
   padding: 0.5rem 1rem;
   text-decoration: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
@@ -10890,28 +10873,23 @@ button:focus {
 }
 
 .shadow-1-strong {
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25),
-    0px 3px 10px 0px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25), 0px 3px 10px 0px rgba(0, 0, 0, 0.2) !important;
 }
 
 .shadow-2-strong {
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25),
-    0px 5px 15px 2px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25), 0px 5px 15px 2px rgba(0, 0, 0, 0.2) !important;
 }
 
 .shadow-3-strong {
-  box-shadow: 0px 6px 11px 0px rgba(0, 0, 0, 0.25),
-    0px 7px 20px 3px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 0px 6px 11px 0px rgba(0, 0, 0, 0.25), 0px 7px 20px 3px rgba(0, 0, 0, 0.2) !important;
 }
 
 .shadow-4-strong {
-  box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.25),
-    0px 10px 30px 4px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.25), 0px 10px 30px 4px rgba(0, 0, 0, 0.2) !important;
 }
 
 .shadow-5-strong {
-  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.25),
-    0px 12px 40px 5px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.25), 0px 12px 40px 5px rgba(0, 0, 0, 0.2) !important;
 }
 
 /*!
@@ -10944,7 +10922,7 @@ i.flag:not(.icon):before {
   width: 16px;
   height: 11px;
   content: "";
-  background: url("https://mdbootstrap.com/img/svg/flags.png") no-repeat -108px -1976px;
+  background: url("https://mdbootstrap.comimg/svg/flags.png") no-repeat -108px -1976px;
 }
 
 /* Flag Sprite Based On http://www.famfamfam.com/lab/icons/flags/ */
@@ -12438,10 +12416,7 @@ i.flag.zimbabwe:before {
   border-bottom: 0.125rem solid #fff;
   border-left: 0.125rem solid #fff;
 }
-.form-outline.form-white
-  .form-control:focus
-  ~ .form-notch
-  .form-notch-trailing {
+.form-outline.form-white .form-control:focus ~ .form-notch .form-notch-trailing {
   border-color: #fff;
 }
 
@@ -12638,8 +12613,7 @@ i.flag.zimbabwe:before {
   height: 1.25rem;
   background-color: #fff;
   margin-top: -0.1875rem;
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   transition: background-color 0.2s, transform 0.2s;
 }
 .form-switch .form-check-input:focus {
@@ -12681,8 +12655,7 @@ i.flag.zimbabwe:before {
   background-color: #3889c6;
   margin-top: -3px;
   margin-left: 1.0625rem;
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   transition: background-color 0.2s, transform 0.2s;
 }
 
@@ -12847,14 +12820,8 @@ i.flag.zimbabwe:before {
 .was-validated :valid.form-file-input:focus ~ .form-file-label {
   box-shadow: none;
 }
-.was-validated
-  :valid.form-file-input:focus-within
-  ~ .form-file-label
-  .form-file-text,
-.was-validated
-  :valid.form-file-input:focus-within
-  ~ .form-file-label
-  .form-file-button {
+.was-validated :valid.form-file-input:focus-within ~ .form-file-label .form-file-text,
+.was-validated :valid.form-file-input:focus-within ~ .form-file-label .form-file-button {
   border-color: #00b74a;
 }
 .was-validated :invalid ~ .invalid-feedback,
@@ -12891,14 +12858,8 @@ i.flag.zimbabwe:before {
 .was-validated :invalid.form-file-input:focus ~ .form-file-label {
   box-shadow: none;
 }
-.was-validated
-  :invalid.form-file-input:focus-within
-  ~ .form-file-label
-  .form-file-text,
-.was-validated
-  :invalid.form-file-input:focus-within
-  ~ .form-file-label
-  .form-file-button {
+.was-validated :invalid.form-file-input:focus-within ~ .form-file-label .form-file-text,
+.was-validated :invalid.form-file-input:focus-within ~ .form-file-label .form-file-button {
   border-color: #f93154;
 }
 .was-validated .form-control:valid,
@@ -12909,41 +12870,17 @@ i.flag.zimbabwe:before {
 .was-validated .form-outline .form-control:valid ~ .form-label {
   color: #00b74a;
 }
-.was-validated
-  .form-outline
-  .form-control:valid
-  ~ .form-notch
-  .form-notch-leading,
-.was-validated
-  .form-outline
-  .form-control:valid
-  ~ .form-notch
-  .form-notch-middle,
-.was-validated
-  .form-outline
-  .form-control:valid
-  ~ .form-notch
-  .form-notch-trailing {
+.was-validated .form-outline .form-control:valid ~ .form-notch .form-notch-leading,
+.was-validated .form-outline .form-control:valid ~ .form-notch .form-notch-middle,
+.was-validated .form-outline .form-control:valid ~ .form-notch .form-notch-trailing {
   border-color: #00b74a;
 }
 .was-validated .form-outline .form-control:invalid ~ .form-label {
   color: #f93154;
 }
-.was-validated
-  .form-outline
-  .form-control:invalid
-  ~ .form-notch
-  .form-notch-leading,
-.was-validated
-  .form-outline
-  .form-control:invalid
-  ~ .form-notch
-  .form-notch-middle,
-.was-validated
-  .form-outline
-  .form-control:invalid
-  ~ .form-notch
-  .form-notch-trailing {
+.was-validated .form-outline .form-control:invalid ~ .form-notch .form-notch-leading,
+.was-validated .form-outline .form-control:invalid ~ .form-notch .form-notch-middle,
+.was-validated .form-outline .form-control:invalid ~ .form-notch .form-notch-trailing {
   border-color: #f93154;
 }
 .was-validated .input-group .form-control:valid,
@@ -12965,28 +12902,12 @@ i.flag.zimbabwe:before {
   border: none;
   box-shadow: none;
 }
-.was-validated
-  .form-file
-  .form-file-input:valid
-  ~ .form-file-label
-  .form-file-text,
-.was-validated
-  .form-file
-  .form-file-input:valid
-  ~ .form-file-label
-  .form-file-button {
+.was-validated .form-file .form-file-input:valid ~ .form-file-label .form-file-text,
+.was-validated .form-file .form-file-input:valid ~ .form-file-label .form-file-button {
   border-color: #00b74a;
 }
-.was-validated
-  .form-file
-  .form-file-input:invalid
-  ~ .form-file-label
-  .form-file-text,
-.was-validated
-  .form-file
-  .form-file-input:invalid
-  ~ .form-file-label
-  .form-file-button {
+.was-validated .form-file .form-file-input:invalid ~ .form-file-label .form-file-text,
+.was-validated .form-file .form-file-input:invalid ~ .form-file-label .form-file-button {
   border-color: #f93154;
 }
 
@@ -14272,8 +14193,8 @@ button.close {
 .btn-group-vertical {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
   border-radius: 3px;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
 }
 .btn-group:hover,
 .btn-group-vertical:hover {
@@ -14675,8 +14596,7 @@ fieldset:disabled .btn-group-vertical {
   touch-action: none;
   transform: scale(0);
   transition-property: transform, opacity;
-  transition-timing-function: cubic-bezier(0, 0, 0.15, 1),
-    cubic-bezier(0, 0, 0.15, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.15, 1), cubic-bezier(0, 0, 0.15, 1);
   z-index: 999;
 }
 .ripple-wave.active {
@@ -15906,10 +15826,7 @@ fieldset:disabled .btn-group-vertical {
   float: left;
   height: 100%;
 }
-.lightbox-gallery
-  .lightbox-gallery-toolbar
-  .lightbox-gallery-left-tools
-  .lightbox-gallery-counter {
+.lightbox-gallery .lightbox-gallery-toolbar .lightbox-gallery-left-tools .lightbox-gallery-counter {
   height: 100%;
   color: #b3b3b3;
   display: flex;
@@ -15939,29 +15856,19 @@ fieldset:disabled .btn-group-vertical {
 .lightbox-gallery .lightbox-gallery-toolbar button.fontawesome-pro:before {
   font-family: "Font Awesome 5 Pro";
 }
-.lightbox-gallery
-  .lightbox-gallery-toolbar
-  button.lightbox-gallery-fullscreen-btn:before {
+.lightbox-gallery .lightbox-gallery-toolbar button.lightbox-gallery-fullscreen-btn:before {
   content: "\f065";
 }
-.lightbox-gallery
-  .lightbox-gallery-toolbar
-  button.lightbox-gallery-fullscreen-btn.active:before {
+.lightbox-gallery .lightbox-gallery-toolbar button.lightbox-gallery-fullscreen-btn.active:before {
   content: "\f066";
 }
-.lightbox-gallery
-  .lightbox-gallery-toolbar
-  button.lightbox-gallery-zoom-btn:before {
+.lightbox-gallery .lightbox-gallery-toolbar button.lightbox-gallery-zoom-btn:before {
   content: "\f00e";
 }
-.lightbox-gallery
-  .lightbox-gallery-toolbar
-  button.lightbox-gallery-zoom-btn.active:before {
+.lightbox-gallery .lightbox-gallery-toolbar button.lightbox-gallery-zoom-btn.active:before {
   content: "\f010";
 }
-.lightbox-gallery
-  .lightbox-gallery-toolbar
-  button.lightbox-gallery-close-btn:before {
+.lightbox-gallery .lightbox-gallery-toolbar button.lightbox-gallery-close-btn:before {
   content: "\f00d";
 }
 .lightbox-gallery .lightbox-gallery-content {
@@ -15992,10 +15899,7 @@ fieldset:disabled .btn-group-vertical {
   cursor: pointer;
   pointer-events: auto;
 }
-.lightbox-gallery
-  .lightbox-gallery-content
-  .lightbox-gallery-image
-  img.vertical {
+.lightbox-gallery .lightbox-gallery-content .lightbox-gallery-image img.vertical {
   height: 100%;
   max-height: 100%;
   width: auto;
@@ -16194,8 +16098,7 @@ fieldset:disabled .btn-group-vertical {
   color: #2979ff;
   border: none;
   background-color: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
     border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   outline: none;
   padding: 0 10px;
@@ -16372,8 +16275,7 @@ fieldset:disabled .btn-group-vertical {
   width: 2px;
 }
 .timepicker-transform {
-  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-    height 400ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, height 400ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .timepicker-time-tips {
   position: absolute;
@@ -17187,12 +17089,7 @@ fieldset:disabled .btn-group-vertical {
 .datatable.datatable-dark .select-wrapper input {
   color: white;
 }
-.datatable.datatable-dark
-  .select-wrapper
-  .form-outline
-  .form-control:focus
-  ~ .form-notch
-  .form-notch-leading,
+.datatable.datatable-dark .select-wrapper .form-outline .form-control:focus ~ .form-notch .form-notch-leading,
 .datatable.datatable-dark .select-wrapper .form-notch-trailing {
   border-color: rgb(251, 251, 251) !important;
 }
@@ -17201,12 +17098,7 @@ fieldset:disabled .btn-group-vertical {
 .datatable.datatable-dark .select-wrapper .form-notch-trailing {
   border-color: rgb(251, 251, 251) !important;
 }
-.datatable.datatable-dark
-  .select-wrapper
-  .form-outline
-  .form-control:focus
-  ~ .form-notch
-  .form-notch-leading {
+.datatable.datatable-dark .select-wrapper .form-outline .form-control:focus ~ .form-notch .form-notch-leading {
   border-color: rgb(251, 251, 251) !important;
 }
 .datatable.datatable-dark .form-check-input[type="checkbox"]:checked {
@@ -17296,9 +17188,7 @@ fieldset:disabled .btn-group-vertical {
 .stepper:not(.stepper-vertical) .stepper-step:last-child .stepper-head {
   padding-right: 1.5rem;
 }
-.stepper:not(.stepper-vertical)
-  .stepper-step:not(:first-child)
-  .stepper-head:before {
+.stepper:not(.stepper-vertical) .stepper-step:not(:first-child) .stepper-head:before {
   flex: 1;
   height: 1px;
   width: 100%;
@@ -17306,9 +17196,7 @@ fieldset:disabled .btn-group-vertical {
   content: "";
   background-color: rgba(0, 0, 0, 0.1);
 }
-.stepper:not(.stepper-vertical)
-  .stepper-step:not(:last-child)
-  .stepper-head:after {
+.stepper:not(.stepper-vertical) .stepper-step:not(:last-child) .stepper-head:after {
   flex: 1;
   height: 1px;
   width: 100%;
@@ -17339,9 +17227,8 @@ fieldset:disabled .btn-group-vertical {
 .stepper-vertical .stepper-content {
   overflow: hidden;
   padding: 0 1.5rem 1.5rem 3.75rem;
-  transition: height 0.3s ease-in-out, margin-top 0.3s ease-in-out,
-    margin-bottom 0.3s ease-in-out, padding-top 0.3s ease-in-out,
-    padding-bottom 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out, margin-top 0.3s ease-in-out, margin-bottom 0.3s ease-in-out,
+    padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
 }
 .stepper-vertical .stepper-content-hide {
   margin-top: 0 !important;
@@ -17380,9 +17267,7 @@ fieldset:disabled .btn-group-vertical {
 .stepper.stepper-mobile .stepper-step:not(:first-child) .stepper-head:before {
   margin-right: 0;
 }
-.stepper.stepper-mobile
-  .stepper-step:not(:last-child):not(:first-child)
-  .stepper-head {
+.stepper.stepper-mobile .stepper-step:not(:last-child):not(:first-child) .stepper-head {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }

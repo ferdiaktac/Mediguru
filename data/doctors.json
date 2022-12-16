@@ -6,7 +6,7 @@
     "city": "Trabzon",
     "rate": "4.9",
     "comment": 45,
-    "img": "/img/doctors/doctor-1.png",
+    "img": "img/doctors/doctor-1.png",
     "treatments": ["Vaser Liposuction", "Breast Augmentation"],
     "yearsofexperience": 15,
     "link": "#"
@@ -18,7 +18,7 @@
     "city": "Samsun",
     "rate": "1.6",
     "comment": 8,
-    "img": "/img/doctors/doctor-2.png",
+    "img": "img/doctors/doctor-2.png",
     "treatments": ["Brazillian Butt Lift", "Breast Augmentation"],
     "yearsofexperience": 8,
     "link": "#"
@@ -30,7 +30,7 @@
     "city": "İstanbul",
     "rate": "2.5",
     "comment": 15,
-    "img": "/img/doctors/doctor-3.png",
+    "img": "img/doctors/doctor-3.png",
     "treatments": ["Vaser Liposuction"],
     "yearsofexperience": 3,
     "link": "#"
@@ -42,7 +42,7 @@
     "city": "Ankara",
     "rate": "4.9",
     "comment": 9,
-    "img": "/img/doctors/doctor-4.png",
+    "img": "img/doctors/doctor-4.png",
     "treatments": ["Vaser Liposuction", "Arm Lift"],
     "yearsofexperience": 8,
     "link": "#"
@@ -54,7 +54,7 @@
     "city": "İzmir",
     "rate": "5.9",
     "comment": 5,
-    "img": "/img/doctors/doctor-5.png",
+    "img": "img/doctors/doctor-5.png",
     "treatments": ["Arm Lift", "Breast Augmentation"],
     "yearsofexperience": 12,
     "link": "#"
@@ -66,7 +66,7 @@
     "city": "Ankara",
     "rate": "3.0",
     "comment": 23,
-    "img": "/img/doctors/doctor-6.png",
+    "img": "img/doctors/doctor-6.png",
     "treatments": ["Vaser Liposuction", "Brazillian Butt Lift"],
     "yearsofexperience": 4,
     "link": "#"
@@ -78,7 +78,7 @@
     "city": "Trabzon",
     "rate": "4.9",
     "comment": 45,
-    "img": "/img/doctors/doctor-1.png",
+    "img": "img/doctors/doctor-1.png",
     "treatments": ["Vaser Liposuction", "Breast Augmentation"],
     "yearsofexperience": 15,
     "link": "#"
@@ -90,7 +90,7 @@
     "city": "Samsun",
     "rate": "1.6",
     "comment": 8,
-    "img": "/img/doctors/doctor-2.png",
+    "img": "img/doctors/doctor-2.png",
     "treatments": ["Brazillian Butt Lift", "Breast Augmentation"],
     "yearsofexperience": 8,
     "link": "#"
@@ -102,7 +102,7 @@
     "city": "İstanbul",
     "rate": "2.5",
     "comment": 15,
-    "img": "/img/doctors/doctor-3.png",
+    "img": "img/doctors/doctor-3.png",
     "treatments": ["Vaser Liposuction"],
     "yearsofexperience": 3,
     "link": "#"
@@ -114,7 +114,7 @@
     "city": "Ankara",
     "rate": "4.9",
     "comment": 9,
-    "img": "/img/doctors/doctor-4.png",
+    "img": "img/doctors/doctor-4.png",
     "treatments": ["Vaser Liposuction", "Arm Lift"],
     "yearsofexperience": 8,
     "link": "#"
@@ -126,7 +126,7 @@
     "city": "İzmir",
     "rate": "5.9",
     "comment": 5,
-    "img": "/img/doctors/doctor-5.png",
+    "img": "img/doctors/doctor-5.png",
     "treatments": ["Arm Lift", "Breast Augmentation"],
     "yearsofexperience": 12,
     "link": "#"
@@ -138,7 +138,7 @@
     "city": "Ankara",
     "rate": "3.0",
     "comment": 23,
-    "img": "/img/doctors/doctor-6.png",
+    "img": "img/doctors/doctor-6.png",
     "treatments": ["Vaser Liposuction", "Brazillian Butt Lift"],
     "yearsofexperience": 4,
     "link": "#"
@@ -150,7 +150,7 @@
     "city": "Trabzon",
     "rate": "4.9",
     "comment": 45,
-    "img": "/img/doctors/doctor-1.png",
+    "img": "img/doctors/doctor-1.png",
     "treatments": ["Vaser Liposuction", "Breast Augmentation"],
     "yearsofexperience": 15,
     "link": "#"
@@ -162,7 +162,7 @@
     "city": "Samsun",
     "rate": "1.6",
     "comment": 8,
-    "img": "/img/doctors/doctor-2.png",
+    "img": "img/doctors/doctor-2.png",
     "treatments": ["Brazillian Butt Lift", "Breast Augmentation"],
     "yearsofexperience": 8,
     "link": "#"
@@ -174,7 +174,7 @@
     "city": "İstanbul",
     "rate": "2.5",
     "comment": 15,
-    "img": "/img/doctors/doctor-3.png",
+    "img": "img/doctors/doctor-3.png",
     "treatments": ["Vaser Liposuction"],
     "yearsofexperience": 3,
     "link": "#"
@@ -186,7 +186,7 @@
     "city": "Ankara",
     "rate": "4.9",
     "comment": 9,
-    "img": "/img/doctors/doctor-4.png",
+    "img": "img/doctors/doctor-4.png",
     "treatments": ["Vaser Liposuction", "Arm Lift"],
     "yearsofexperience": 8,
     "link": "#"
@@ -198,7 +198,7 @@
     "city": "İzmir",
     "rate": "5.9",
     "comment": 5,
-    "img": "/img/doctors/doctor-5.png",
+    "img": "img/doctors/doctor-5.png",
     "treatments": ["Arm Lift", "Breast Augmentation"],
     "yearsofexperience": 12,
     "link": "#"
@@ -210,7 +210,7 @@
     "city": "Ankara",
     "rate": "3.0",
     "comment": 23,
-    "img": "/img/doctors/doctor-6.png",
+    "img": "img/doctors/doctor-6.png",
     "treatments": ["Vaser Liposuction", "Brazillian Butt Lift"],
     "yearsofexperience": 4,
     "link": "#"
