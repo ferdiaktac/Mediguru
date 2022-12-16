@@ -70,7 +70,7 @@ $('[required="required"]').closest(".form-group").addClass("required");
 $(function () {
   var input = document.querySelector("#tel_number");
   window.intlTelInput(input, {
-    utilsScript: "/js/telinput/js/utils.js",
+    utilsScript: "js/telinput/js/utils.js",
     initialCountry: "us",
     separateDialCode: true,
   });
