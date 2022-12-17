@@ -19485,6 +19485,10 @@ span.no-underline {
   margin-top: 24px;
 }
 
+#FilterWrapper .modal-fullscreen .modal-body {
+  overflow-y: unset !important;
+}
+
 @media (max-width: 991.98px) {
   .d1 {
     font-size: 48px;

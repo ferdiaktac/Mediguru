@@ -3100,4 +3100,10 @@ span.no-underline {
     margin-top: 24px;
   }
 }
+
+#FilterWrapper {
+  .modal-fullscreen .modal-body {
+    overflow-y: unset !important;
+  }
+}
 @import "./responsive";
