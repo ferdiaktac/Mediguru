@@ -1356,7 +1356,7 @@ section.sub-page-how-it-works {
     .dropdown-toggle {
       display: flex;
       align-items: center;
-      height: -webkit-fill-available;
+      height: 100%;
     }
     &.active {
       .dropdown {
@@ -2425,7 +2425,7 @@ input#multiplefileupload {
             background: rgba(51, 195, 144, 0.15);
             border-radius: 200px;
             min-width: 118px;
-            height: -webkit-fill-available;
+            height: 100%;
             margin-left: 24px;
           }
         }

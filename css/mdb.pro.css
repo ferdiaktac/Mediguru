@@ -17810,7 +17810,7 @@ section.sub-page-how-it-works .feature p.p16 {
 #filter-sort .filter-dropdown .dropdown-toggle {
   display: flex;
   align-items: center;
-  height: -webkit-fill-available;
+  height: 100%;
 }
 #filter-sort .filter-dropdown.active .dropdown {
   border: 1.5px solid var(--bs-blue);
@@ -18844,7 +18844,7 @@ input#multiplefileupload {
   background: rgba(51, 195, 144, 0.15);
   border-radius: 200px;
   min-width: 118px;
-  height: -webkit-fill-available;
+  height: 100%;
   margin-left: 24px;
 }
 .doctor-detail .doctor-header .details .right .doctor-info {
