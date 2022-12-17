@@ -701,7 +701,7 @@
           const filteredData = data.filter(
             (item) =>
               // Filter with Doctors ID's
-              item.id === 1 || item.id === 2 || item.id === 3 || item.id === 4 || item.id === 5
+              item.id === "dr_1" || item.id === "dr_2" || item.id === "dr_3" || item.id === "dr_4" || item.id === "dr_5"
           );
           return filteredData;
         });
@@ -814,7 +814,13 @@
           const filteredData = data.filter(
             (item) =>
               // Filter with Procedures ID's
-              item.id === 1 || item.id === 2 || item.id === 3 || item.id === 4 || item.id === 5 || item.id === 6
+              item.id === "pr-1" ||
+              item.id === "pr_2" ||
+              item.id === "pr_3" ||
+              item.id === "pr_4" ||
+              item.id === "pr_5" ||
+              item.id === "pr_6" ||
+              item.id === "pr_7"
           );
           return filteredData;
         });

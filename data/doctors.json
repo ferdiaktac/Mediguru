@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "dr_1",
     "name": "Ata Kerem",
     "specialty": "Anesthesiologist",
     "city": "Trabzon",
@@ -12,7 +12,7 @@
     "link": "#"
   },
   {
-    "id": 2,
+    "id": "dr_2",
     "name": "Emine Münevver",
     "specialty": "Orthodontist",
     "city": "Samsun",
@@ -24,7 +24,7 @@
     "link": "#"
   },
   {
-    "id": 3,
+    "id": "dr_3",
     "name": "Emre Ayberk",
     "specialty": "Hair Restoration Surgeon",
     "city": "İstanbul",
@@ -36,7 +36,7 @@
     "link": "#"
   },
   {
-    "id": 4,
+    "id": "dr_4",
     "name": "Merve Ece Altıok",
     "specialty": "General Surgeon",
     "city": "Ankara",
@@ -48,7 +48,7 @@
     "link": "#"
   },
   {
-    "id": 5,
+    "id": "dr_5",
     "name": "Yaşar Utku",
     "specialty": "Facial Plastic Surgeon",
     "city": "İzmir",
@@ -60,7 +60,7 @@
     "link": "#"
   },
   {
-    "id": 6,
+    "id": "dr_6",
     "name": "Deniz Dilay",
     "specialty": "General Surgeon",
     "city": "Ankara",
@@ -72,7 +72,7 @@
     "link": "#"
   },
   {
-    "id": 7,
+    "id": "dr_7",
     "name": "Ata Kerem",
     "specialty": "Anesthesiologist",
     "city": "Trabzon",
@@ -84,7 +84,7 @@
     "link": "#"
   },
   {
-    "id": 8,
+    "id": "dr_8",
     "name": "Emine Münevver",
     "specialty": "Orthodontist",
     "city": "Samsun",
@@ -96,7 +96,7 @@
     "link": "#"
   },
   {
-    "id": 9,
+    "id": "dr_8",
     "name": "Emre Ayberk",
     "specialty": "Hair Restoration Surgeon",
     "city": "İstanbul",
@@ -108,7 +108,7 @@
     "link": "#"
   },
   {
-    "id": 10,
+    "id": "dr_10",
     "name": "Merve Ece Altıok",
     "specialty": "General Surgeon",
     "city": "Ankara",
@@ -120,7 +120,7 @@
     "link": "#"
   },
   {
-    "id": 11,
+    "id": "dr_11",
     "name": "Yaşar Utku",
     "specialty": "Facial Plastic Surgeon",
     "city": "İzmir",
@@ -132,7 +132,7 @@
     "link": "#"
   },
   {
-    "id": 12,
+    "id": "dr_12",
     "name": "Deniz Dilay",
     "specialty": "General Surgeon",
     "city": "Ankara",
@@ -144,7 +144,7 @@
     "link": "#"
   },
   {
-    "id": 13,
+    "id": "dr_13",
     "name": "Ata Kerem",
     "specialty": "Anesthesiologist",
     "city": "Trabzon",
@@ -156,7 +156,7 @@
     "link": "#"
   },
   {
-    "id": 14,
+    "id": "dr_14",
     "name": "Emine Münevver",
     "specialty": "Orthodontist",
     "city": "Samsun",
@@ -168,7 +168,7 @@
     "link": "#"
   },
   {
-    "id": 15,
+    "id": "dr_15",
     "name": "Emre Ayberk",
     "specialty": "Hair Restoration Surgeon",
     "city": "İstanbul",
@@ -180,7 +180,7 @@
     "link": "#"
   },
   {
-    "id": 16,
+    "id": "dr_16",
     "name": "Merve Ece Altıok",
     "specialty": "General Surgeon",
     "city": "Ankara",
@@ -192,7 +192,7 @@
     "link": "#"
   },
   {
-    "id": 17,
+    "id": "dr_17",
     "name": "Yaşar Utku",
     "specialty": "Facial Plastic Surgeon",
     "city": "İzmir",
@@ -204,7 +204,7 @@
     "link": "#"
   },
   {
-    "id": 18,
+    "id": "dr_18",
     "name": "Deniz Dilay",
     "specialty": "General Surgeon",
     "city": "Ankara",
