@@ -1086,7 +1086,7 @@
               data-aos-duration="1000"
             >
               <div class="doctor-wrapper">
-                <img src="img/doctors/doctor-pp.png" alt="" />
+                <img src="img/doctors/doctor-1.png" alt="" />
                 <div class="doctor-info">
                   <span class="doctor-name">Hayati Akbaş</span>
                   <span>Plastic Surgeon</span>
@@ -2269,7 +2269,10 @@
         stopTimer();
         startTimer();
       });
+    });
 
+    $(document).ready(function () {
+      var timer;
       function startTimer() {
         timer = setInterval(function () {
           var category_reviews = $("#filter-reviews").val();
