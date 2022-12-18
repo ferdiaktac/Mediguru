@@ -73,6 +73,13 @@ $(function () {
     utilsScript: "js/telinput/js/utils.js",
     initialCountry: "us",
     separateDialCode: true,
+    initialCountry: "auto",
+    geoIpLookup: function (callback) {
+      $.get("https://ipinfo.io", function () {}, "jsonp").always(function (resp) {
+        var countryCode = resp && resp.country ? resp.country : "us";
+        callback(countryCode);
+      });
+    },
   });
 });
 

@@ -260,9 +260,8 @@
                     class="form-control form-control-lg"
                     id="res_telnumber"
                     name="tel_number"
-                    placeholder="Phone"
                     required="required"
-                    value="82120142305"
+                    value=""
                   />
                 </div>
 
@@ -641,7 +640,6 @@
                   class="form-control form-control-lg"
                   id="tel_number"
                   name="tel_number"
-                  placeholder="Phone"
                   required="required"
                 />
               </div>
@@ -915,39 +913,59 @@
         utilsScript: "js/telinput/js/utils.js",
         initialCountry: "us",
         separateDialCode: true,
+        initialCountry: "auto",
+        geoIpLookup: function (callback) {
+          $.get("https://ipinfo.io", function () {}, "jsonp").always(function (resp) {
+            var countryCode = resp && resp.country ? resp.country : "us";
+            callback(countryCode);
+          });
+        },
       });
     });
 
     // Get Options of Arrival Airports, Doctors and Procedures
     function addOptions(url, elementId, valueKey, textKey, filterKey, filterValue) {
       $.getJSON(url, function (data) {
+        let addedValues = new Set();
         if (elementId === "#res_arrivalairport") {
           $.each(data, function (key, val) {
             if (val[filterKey] == filterValue && val.iata) {
-              $(elementId).append(
-                $("<option>", {
-                  value: val[valueKey],
-                  text: val.iata + " - " + val[textKey],
-                })
-              );
+              let optionValue = val[valueKey];
+              if (!addedValues.has(optionValue)) {
+                addedValues.add(optionValue);
+                $(elementId).append(
+                  $("<option>", {
+                    value: optionValue,
+                    text: val.iata + " - " + val[textKey],
+                  })
+                );
+              }
             } else if (val[filterKey] == filterValue && !val.iata) {
-              $(elementId).append(
-                $("<option>", {
-                  value: val[valueKey],
-                  text: val[textKey],
-                })
-              );
+              let optionValue = val[valueKey];
+              if (!addedValues.has(optionValue)) {
+                addedValues.add(optionValue);
+                $(elementId).append(
+                  $("<option>", {
+                    value: optionValue,
+                    text: val[textKey],
+                  })
+                );
+              }
             }
           });
         } else {
           $.each(data, function (key, val) {
             if (val[filterKey] == filterValue) {
-              $(elementId).append(
-                $("<option>", {
-                  value: val[valueKey],
-                  text: val[textKey],
-                })
-              );
+              let optionValue = val[valueKey];
+              if (!addedValues.has(optionValue)) {
+                addedValues.add(optionValue);
+                $(elementId).append(
+                  $("<option>", {
+                    value: optionValue,
+                    text: val[textKey],
+                  })
+                );
+              }
             }
           });
         }
