@@ -789,9 +789,6 @@
                   required
                 >
                   <option disabled selected hidden>Select for your treatment</option>
-                  <option value="Treatment 1">Treatment 1</option>
-                  <option value="Treatment 2">Treatment 2</option>
-                  <option value="Treatment 3">Treatment 3</option>
                 </select>
               </div>
               <div class="form-group rating">
@@ -1245,6 +1242,26 @@
       var selectedRating = $(this).index() + 1;
       $("#rating").val(selectedRating);
     });
+
+    // Get Options of Treatments
+    function addOptions(url, elementId) {
+      var treatments = [];
+      $.getJSON(url, function (data) {
+        $.each(data, function (key, val) {
+          $.each(val.treatments, function (key, treatment) {
+            if (treatments.indexOf(treatment) === -1) {
+              treatments.push(treatment);
+              var option = $("<option>");
+              option.val(treatment);
+              option.text(treatment);
+              $(elementId).append(option);
+            }
+          });
+        });
+      });
+    }
+
+    addOptions("data/doctors.json", "#review_treatment");
   </script>
   <!-- Scripts End -->
 </html>

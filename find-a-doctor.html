@@ -330,48 +330,7 @@
                               Treatments
                               <span class="count-checked d-none"></span>
                             </a>
-                            <ul class="dropdown-menu">
-                              <li class="dropdown-item">
-                                <input
-                                  type="checkbox"
-                                  class="form-check-input"
-                                  name="treatments"
-                                  id="treatment1"
-                                  value="Vaser Liposuction"
-                                />
-                                <label for="treatment1">Vaser Liposuction</label>
-                              </li>
-                              <li class="dropdown-item">
-                                <input
-                                  type="checkbox"
-                                  class="form-check-input"
-                                  name="treatments"
-                                  id="treatment2"
-                                  value="Arm Lift"
-                                />
-                                <label for="treatment2">Arm Lift</label>
-                              </li>
-                              <li class="dropdown-item">
-                                <input
-                                  type="checkbox"
-                                  class="form-check-input"
-                                  name="treatments"
-                                  id="treatment3"
-                                  value="Brazillian Butt Lift"
-                                />
-                                <label for="treatment3">Brazillian Butt Lift</label>
-                              </li>
-                              <li class="dropdown-item">
-                                <input
-                                  type="checkbox"
-                                  class="form-check-input"
-                                  name="treatments"
-                                  id="treatment4"
-                                  value="Breast Augmentation"
-                                />
-                                <label for="treatment4">Breast Augmentation</label>
-                              </li>
-                            </ul>
+                            <ul class="dropdown-menu"></ul>
                           </div>
                         </div>
                         <!-- Treatments End -->
@@ -389,50 +348,7 @@
                               Doctor’s City
                               <span class="count-checked d-none"></span>
                             </a>
-                            <ul class="dropdown-menu">
-                              <li class="dropdown-item">
-                                <input
-                                  type="checkbox"
-                                  class="form-check-input"
-                                  name="city"
-                                  id="city1"
-                                  value="İstanbul"
-                                />
-                                <label for="city1">İstanbul</label>
-                              </li>
-                              <li class="dropdown-item">
-                                <input type="checkbox" class="form-check-input" name="city" id="city2" value="Samsun" />
-                                <label for="city2">Samsun</label>
-                              </li>
-                              <li class="dropdown-item">
-                                <input
-                                  type="checkbox"
-                                  class="form-check-input"
-                                  name="city"
-                                  id="city3"
-                                  value="Trabzon"
-                                />
-                                <label for="city3">Trabzon</label>
-                              </li>
-                              <li class="dropdown-item">
-                                <input type="checkbox" class="form-check-input" name="city" id="city4" value="Ankara" />
-                                <label for="city4">Ankara</label>
-                              </li>
-                              <li class="dropdown-item">
-                                <input
-                                  type="checkbox"
-                                  class="form-check-input"
-                                  name="city"
-                                  id="city5"
-                                  value="Eskişehir"
-                                />
-                                <label for="city5">Eskişehir</label>
-                              </li>
-                              <li class="dropdown-item">
-                                <input type="checkbox" class="form-check-input" name="city" id="city6" value="İzmir" />
-                                <label for="city6">İzmir</label>
-                              </li>
-                            </ul>
+                            <ul class="dropdown-menu"></ul>
                           </div>
                         </div>
                         <!-- City End -->
@@ -1350,6 +1266,41 @@
     MultiFilters.addEventListener("update.mdb.filters", (e) => {
       renderItems(e.items);
     });
+
+    // Get List of Treatments and Cities
+    function addOptions(url, elementClass, Type) {
+      var options = new Set();
+      $.getJSON(url, function (data) {
+        $.each(data, function (key, val) {
+          $.each(val[Type], function (key, option) {
+            if (!options.has(option)) {
+              options.add(option);
+              var id =
+                Type + "-" + Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+              $(elementClass).append(
+                '<li class="dropdown-item">' +
+                  '<input type="checkbox" class="form-check-input" name="' +
+                  Type +
+                  '" id="' +
+                  id +
+                  '" value="' +
+                  option +
+                  '">' +
+                  '<label for="' +
+                  id +
+                  '">' +
+                  option +
+                  "</label>" +
+                  "</li>"
+              );
+            }
+          });
+        });
+      });
+    }
+
+    addOptions("data/doctors.json", ".filter-dropdown.treatments .dropdown-menu", "treatments");
+    addOptions("data/doctors.json", ".filter-dropdown.city .dropdown-menu", "city");
   </script>
   <!-- Scripts End -->
 </html>

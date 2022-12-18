@@ -293,9 +293,6 @@
                     required
                   >
                     <option disabled selected hidden>Select Your Doctor</option>
-                    <option value="Doctor 1">Doctor 1</option>
-                    <option value="Doctor 2">Doctor 2</option>
-                    <option value="Doctor 3">Doctor 3</option>
                   </select>
                 </div>
                 <div class="col-lg-6 form-group">
@@ -307,9 +304,6 @@
                     data-filter="true"
                   >
                     <option disabled selected hidden>Select Procedure</option>
-                    <option value="Procedure 1">Procedure 1</option>
-                    <option value="Procedure 2">Procedure 2</option>
-                    <option value="Procedure 3">Procedure 3</option>
                   </select>
                 </div>
                 <div class="col-lg-6 form-group required">
@@ -322,9 +316,6 @@
                     required
                   >
                     <option disabled selected hidden>Select Arrival Airport</option>
-                    <option value="Arrival Airport 1">Arrival Airport 1</option>
-                    <option value="Arrival Airport 2">Arrival Airport 2</option>
-                    <option value="Arrival Airport 3">Arrival Airport 3</option>
                   </select>
                 </div>
                 <div class="col-lg-6 form-group required">
@@ -926,6 +917,46 @@
         separateDialCode: true,
       });
     });
+
+    // Get Options of Arrival Airports, Doctors and Procedures
+    function addOptions(url, elementId, valueKey, textKey, filterKey, filterValue) {
+      $.getJSON(url, function (data) {
+        if (elementId === "#res_arrivalairport") {
+          $.each(data, function (key, val) {
+            if (val[filterKey] == filterValue && val.iata) {
+              $(elementId).append(
+                $("<option>", {
+                  value: val[valueKey],
+                  text: val.iata + " - " + val[textKey],
+                })
+              );
+            } else if (val[filterKey] == filterValue && !val.iata) {
+              $(elementId).append(
+                $("<option>", {
+                  value: val[valueKey],
+                  text: val[textKey],
+                })
+              );
+            }
+          });
+        } else {
+          $.each(data, function (key, val) {
+            if (val[filterKey] == filterValue) {
+              $(elementId).append(
+                $("<option>", {
+                  value: val[valueKey],
+                  text: val[textKey],
+                })
+              );
+            }
+          });
+        }
+      });
+    }
+
+    addOptions("data/doctors.json", "#res_doctorname", "name", "name");
+    addOptions("data/procedures.json", "#res_procedurename", "title", "title");
+    addOptions("data/airports.json", "#res_arrivalairport", "name", "name", "country", "TR");
   </script>
   <!-- Scripts End -->
 </html>

@@ -352,44 +352,7 @@
                               Body Areas
                               <span class="count-checked d-none"></span>
                             </a>
-                            <ul class="dropdown-menu">
-                              <li class="dropdown-item">
-                                <input type="checkbox" class="form-check-input" name="body" id="body1" value="Chin" />
-                                <label for="body1">Chin</label>
-                              </li>
-                              <li class="dropdown-item">
-                                <input type="checkbox" class="form-check-input" name="body" id="body2" value="Arm" />
-                                <label for="body2">Arm</label>
-                              </li>
-                              <li class="dropdown-item">
-                                <input type="checkbox" class="form-check-input" name="body" id="body3" value="Butt" />
-                                <label for="body3">Butt</label>
-                              </li>
-                              <li class="dropdown-item">
-                                <input
-                                  type="checkbox"
-                                  class="form-check-input"
-                                  name="body"
-                                  id="body4"
-                                  value="Stomach"
-                                />
-                                <label for="body4">Stomach</label>
-                              </li>
-                              <li class="dropdown-item">
-                                <input
-                                  type="checkbox"
-                                  class="form-check-input"
-                                  name="body"
-                                  id="body5"
-                                  value="Female Genital"
-                                />
-                                <label for="body5">Female Genital</label>
-                              </li>
-                              <li class="dropdown-item">
-                                <input type="checkbox" class="form-check-input" name="body" id="body6" value="Breast" />
-                                <label for="body6">Breast</label>
-                              </li>
-                            </ul>
+                            <ul class="dropdown-menu"></ul>
                           </div>
                         </div>
                         <!-- Body Areas End -->
@@ -407,68 +370,7 @@
                               Concerns
                               <span class="count-checked d-none"></span>
                             </a>
-                            <ul class="dropdown-menu">
-                              <li class="dropdown-item">
-                                <input
-                                  type="checkbox"
-                                  class="form-check-input"
-                                  name="concern"
-                                  id="concern1"
-                                  value="Acne"
-                                />
-                                <label for="concern1">Acne</label>
-                              </li>
-                              <li class="dropdown-item">
-                                <input
-                                  type="checkbox"
-                                  class="form-check-input"
-                                  name="concern"
-                                  id="concern2"
-                                  value="Breast Cancer"
-                                />
-                                <label for="concern2">Breast Cancer</label>
-                              </li>
-                              <li class="dropdown-item">
-                                <input
-                                  type="checkbox"
-                                  class="form-check-input"
-                                  name="concern"
-                                  id="concern3"
-                                  value="Capsular Contracture"
-                                />
-                                <label for="concern3">Capsular Contracture</label>
-                              </li>
-                              <li class="dropdown-item">
-                                <input
-                                  type="checkbox"
-                                  class="form-check-input"
-                                  name="concern"
-                                  id="concern4"
-                                  value="Cellulite"
-                                />
-                                <label for="concern4">Cellulite</label>
-                              </li>
-                              <li class="dropdown-item">
-                                <input
-                                  type="checkbox"
-                                  class="form-check-input"
-                                  name="concern"
-                                  id="concern5"
-                                  value="Eczema"
-                                />
-                                <label for="concern5">Eczema</label>
-                              </li>
-                              <li class="dropdown-item">
-                                <input
-                                  type="checkbox"
-                                  class="form-check-input"
-                                  name="concern"
-                                  id="concern6"
-                                  value="Flat Butt"
-                                />
-                                <label for="concern6">Flat Butt</label>
-                              </li>
-                            </ul>
+                            <ul class="dropdown-menu"></ul>
                           </div>
                         </div>
                         <!-- Concerns End -->
@@ -1034,6 +936,41 @@
     MultiFilters.addEventListener("update.mdb.filters", (e) => {
       renderItems(e.items);
     });
+
+    // Get List of BodyAreas and Concerns
+    function addOptions(url, elementClass, Type) {
+      var options = new Set();
+      $.getJSON(url, function (data) {
+        $.each(data, function (key, val) {
+          $.each(val[Type], function (key, option) {
+            if (!options.has(option)) {
+              options.add(option);
+              var id =
+                Type + "-" + Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+              $(elementClass).append(
+                '<li class="dropdown-item">' +
+                  '<input type="checkbox" class="form-check-input" name="' +
+                  Type +
+                  '" id="' +
+                  id +
+                  '" value="' +
+                  option +
+                  '">' +
+                  '<label for="' +
+                  id +
+                  '">' +
+                  option +
+                  "</label>" +
+                  "</li>"
+              );
+            }
+          });
+        });
+      });
+    }
+
+    addOptions("data/procedures.json", ".filter-dropdown.bodyareas .dropdown-menu", "bodyareas");
+    addOptions("data/procedures.json", ".filter-dropdown.concerns .dropdown-menu", "concerns");
   </script>
   <!-- Scripts End -->
 </html>
