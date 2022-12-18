@@ -113,7 +113,7 @@ var treatmentsCount = function () {
     containerclass.removeClass("active");
   }
 };
-$("input:checkbox").on("change", function () {
+$(document).on("change", "input[name='treatments']", function () {
   treatmentsCount();
 });
 
@@ -133,48 +133,8 @@ var cityCount = function () {
     containerclass.removeClass("active");
   }
 };
-$("input:checkbox").on("change", function () {
+$(document).on("change", "input[name='city']", function () {
   cityCount();
-});
-
-// Count Checkbox - Body Areas
-var bodyCount = function () {
-  var city = $("input[name='body']:checked").length;
-  var countclass = $(".bodyareas .count-checked");
-  var containerclass = $(".filter-dropdown.bodyareas");
-
-  if (city > 0) {
-    $(countclass).text(city);
-    countclass.removeClass("d-none");
-    containerclass.addClass("active");
-  } else {
-    $(countclass).text(" ");
-    countclass.addClass("d-none");
-    containerclass.removeClass("active");
-  }
-};
-$("input:checkbox").on("change", function () {
-  bodyCount();
-});
-
-// Count Checkbox - Concerns
-var concernCount = function () {
-  var city = $("input[name='concern']:checked").length;
-  var countclass = $(".concerns .count-checked");
-  var containerclass = $(".filter-dropdown.concerns");
-
-  if (city > 0) {
-    $(countclass).text(city);
-    countclass.removeClass("d-none");
-    containerclass.addClass("active");
-  } else {
-    $(countclass).text(" ");
-    countclass.addClass("d-none");
-    containerclass.removeClass("active");
-  }
-};
-$("input:checkbox").on("change", function () {
-  concernCount();
 });
 
 // Rating Selection
@@ -202,6 +162,46 @@ function showYears(e) {
     $(".filter-dropdown.yearsofexperience").addClass("active");
   }
 }
+
+// Count Checkbox - Body Areas
+var bodyCount = function () {
+  var city = $("input[name='bodyareas']:checked").length;
+  var countclass = $(".bodyareas .count-checked");
+  var containerclass = $(".filter-dropdown.bodyareas");
+
+  if (city > 0) {
+    $(countclass).text(city);
+    countclass.removeClass("d-none");
+    containerclass.addClass("active");
+  } else {
+    $(countclass).text(" ");
+    countclass.addClass("d-none");
+    containerclass.removeClass("active");
+  }
+};
+$(document).on("change", "input[name='bodyareas']", function () {
+  bodyCount();
+});
+
+// Count Checkbox - Concerns
+var concernCount = function () {
+  var city = $("input[name='concerns']:checked").length;
+  var countclass = $(".concerns .count-checked");
+  var containerclass = $(".filter-dropdown.concerns");
+
+  if (city > 0) {
+    $(countclass).text(city);
+    countclass.removeClass("d-none");
+    containerclass.addClass("active");
+  } else {
+    $(countclass).text(" ");
+    countclass.addClass("d-none");
+    containerclass.removeClass("active");
+  }
+};
+$(document).on("change", "input[name='concerns']", function () {
+  concernCount();
+});
 
 // Read More
 var showChar = 400;
